@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Home</title>
+
+  <style>
+    body {
+      font-family: Arial;
+      text-align: center;
+      margin-top: 100px;
+      background: #dff0d8;
+    }
+
+    h1 {
+      color: green;
+    }
+
+    button {
+      padding: 10px 20px;
+      margin-top: 20px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Bem-vindo!</h1>
+  <p>Você fez login com sucesso 👍</p>
+
+  <button onclick="voltar()">Sair</button>
+
+  <script>
+    function voltar() {
+      window.location.href = "login.html";
+    }
+  </script>
+
+</body>
+</html>
