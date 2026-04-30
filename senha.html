@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Login Simples</title>
+  <style>
+    body {
+      font-family: Arial;
+      background: #f0f0f0;
+      text-align: center;
+      margin-top: 100px;
+    }
+    input {
+      padding: 10px;
+      margin: 5px;
+      width: 200px;
+    }
+    button {
+      padding: 10px 20px;
+      cursor: pointer;
+    }
+    #mensagem {
+      margin-top: 10px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Login</h2>
+
+  <input type="text" id="usuario" placeholder="Usuário"><br>
+  <input type="password" id="senha" placeholder="Senha"><br>
+  <button onclick="login()">Entrar</button>
+
+  <div id="mensagem"></div>
+
+  <script>
+    function login() {
+      const usuario = document.getElementById("usuario").value;
+      const senha = document.getElementById("senha").value;
+
+      // Usuário e senha corretos (exemplo)
+      const usuarioCorreto = "pedro";
+      const senhaCorreta = "0304";
+
+      if (usuario === usuarioCorreto && senha === senhaCorreta) {
+        document.getElementById("mensagem").style.color = "green";
+        document.getElementById("mensagem").innerText = "Login realizado com sucesso!";
+      } else {
+        document.getElementById("mensagem").style.color = "red";
+        document.getElementById("mensagem").innerText = "Usuário ou senha incorretos!";
+      }
+    }
+  </script>
+
+</body>
+</html>
